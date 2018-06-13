@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f968fb39e6dd420dbcdc70fbf6632faa" Name="Diagram1">
+        <EntityTypeShape EntityType="CivilWorksModel2.Item" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.ProjectItem" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.ProjectLabourEquipment" Width="1.5" PointX="8.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.ProjectQuantity" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.ProjectReport" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.Project" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.ProjectTeam" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.sysdiagram" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.UnitType" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CivilWorksModel2.User" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="CivilWorksModel2.FK_Items_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectItems_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectQuantities_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectItems_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectLabourEquipments_ProjectReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectQuantities_ProjectReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CivilWorksModel2.FK_ProjectTeam_Projects" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CivilWorksModel2.User1" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CivilWorksModel2.UserPasswordActivation" Width="1.5" PointX="12.625" PointY="1.375" />
+        <AssociationConnector Association="CivilWorksModel2.FK_UserPasswordActivation_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
