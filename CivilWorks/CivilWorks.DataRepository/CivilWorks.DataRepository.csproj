@@ -40,9 +40,11 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +58,8 @@
     <Compile Include="DataAccessManager\IDataAccessManager.cs" />
     <Compile Include="DataAccessManager\IDBContextProvider.cs" />
     <Compile Include="EntityRepository\BaseEntityRepo.cs" />
+    <Compile Include="EntityRepository\Helper\MessagingHelper.cs" />
+    <Compile Include="EntityRepository\InvitationRepository.cs" />
     <Compile Include="EntityRepository\UserRepository.cs" />
     <Compile Include="Model\CivilWorksDBEntities.Context.cs">
       <AutoGen>True</AutoGen>
@@ -143,6 +147,10 @@
     <ProjectReference Include="..\CivilWorks.BusinessObjects\CivilWorks.BusinessObjects.csproj">
       <Project>{1A18C83F-C092-495D-8442-479409B194D9}</Project>
       <Name>CivilWorks.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CivilWorks.Common\CivilWorks.Common.csproj">
+      <Project>{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}</Project>
+      <Name>CivilWorks.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

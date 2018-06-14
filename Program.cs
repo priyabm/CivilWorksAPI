@@ -23,7 +23,7 @@ namespace APISelfHosting
         {
             try
             {
-                var config = new HttpSelfHostConfiguration("http://localhost:6464/");
+                var config = new HttpSelfHostConfiguration("http://localhost:62447/");
                 var cors = new EnableCorsAttribute("*", "*", "*");
                 config.EnableCors(cors);
 

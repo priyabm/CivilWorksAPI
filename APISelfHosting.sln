@@ -5,7 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APISelfHosting", "APISelfHosting.csproj", "{59DFF2F0-26FF-4EAF-B047-B0EDCA61D1D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks", "CivilWorks\CivilWorks.csproj", "{EB41392E-7F8E-420E-BF20-1EBC1B2BD6E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks.BusinessObjects", "CivilWorks\CivilWorks.BusinessObjects\CivilWorks.BusinessObjects.csproj", "{1A18C83F-C092-495D-8442-479409B194D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks.DataRepository", "CivilWorks\CivilWorks.DataRepository\CivilWorks.DataRepository.csproj", "{363C70E1-6F07-46C2-BD34-72D4C7BEA00D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks.WebAPI", "CivilWorks\CivilWorks.WebAPI\CivilWorks.WebAPI.csproj", "{864ABCCC-74AD-48F7-8C91-91FD881B1D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks.WebAPI.Tests", "CivilWorks\CivilWorks.WebAPI.Tests\CivilWorks.WebAPI.Tests.csproj", "{7D1CE543-04B8-4697-9861-7DEBACBAB13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilWorks.Common", "CivilWorks\CivilWorks.Common\CivilWorks.Common.csproj", "{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +25,26 @@ Global
 		{59DFF2F0-26FF-4EAF-B047-B0EDCA61D1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59DFF2F0-26FF-4EAF-B047-B0EDCA61D1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59DFF2F0-26FF-4EAF-B047-B0EDCA61D1D1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB41392E-7F8E-420E-BF20-1EBC1B2BD6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB41392E-7F8E-420E-BF20-1EBC1B2BD6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB41392E-7F8E-420E-BF20-1EBC1B2BD6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB41392E-7F8E-420E-BF20-1EBC1B2BD6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A18C83F-C092-495D-8442-479409B194D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A18C83F-C092-495D-8442-479409B194D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A18C83F-C092-495D-8442-479409B194D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A18C83F-C092-495D-8442-479409B194D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363C70E1-6F07-46C2-BD34-72D4C7BEA00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363C70E1-6F07-46C2-BD34-72D4C7BEA00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363C70E1-6F07-46C2-BD34-72D4C7BEA00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363C70E1-6F07-46C2-BD34-72D4C7BEA00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864ABCCC-74AD-48F7-8C91-91FD881B1D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864ABCCC-74AD-48F7-8C91-91FD881B1D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864ABCCC-74AD-48F7-8C91-91FD881B1D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864ABCCC-74AD-48F7-8C91-91FD881B1D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1CE543-04B8-4697-9861-7DEBACBAB13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1CE543-04B8-4697-9861-7DEBACBAB13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1CE543-04B8-4697-9861-7DEBACBAB13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1CE543-04B8-4697-9861-7DEBACBAB13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF2790C-D6CB-468F-9CFB-D615C1C452F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

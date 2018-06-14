@@ -7,7 +7,7 @@ using EO = CivilWorks.DataRepository.Model;
 
 namespace CivilWorks.DataRepository.EntityRepository
 {
-    internal class BaseEntityRepo
+    internal abstract class BaseEntityRepo
     {
         internal EO.CivilWorksEntities _context;
 
@@ -17,6 +17,25 @@ namespace CivilWorks.DataRepository.EntityRepository
         }
 
         public virtual Object Get<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual Object Login<T>(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual Object Save<T>(T entity)
+        {
+            throw new NotImplementedException();
+        }
+        public virtual Object ValidateInvitation<T>(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual object ResetPassword<T>(T entity)
         {
             throw new NotImplementedException();
         }

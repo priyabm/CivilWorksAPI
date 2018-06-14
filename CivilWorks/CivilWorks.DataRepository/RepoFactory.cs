@@ -19,7 +19,10 @@ namespace CivilWorks.DataRepository
             {
                 repo = new UserRepository(context);
             }
-
+            if (typeof(T) == typeof(BO.UserPasswordActivation))
+            {
+                repo = new InvitationRepository(context);
+            }
             return repo;
         }
     }
