@@ -60,6 +60,10 @@
     <Compile Include="EntityRepository\BaseEntityRepo.cs" />
     <Compile Include="EntityRepository\Helper\MessagingHelper.cs" />
     <Compile Include="EntityRepository\InvitationRepository.cs" />
+    <Compile Include="EntityRepository\ItemRepository.cs" />
+    <Compile Include="EntityRepository\ProjectReportRepository.cs" />
+    <Compile Include="EntityRepository\ProjectRepository.cs" />
+    <Compile Include="EntityRepository\ProjectTeamRepository.cs" />
     <Compile Include="EntityRepository\UserRepository.cs" />
     <Compile Include="Model\CivilWorksDBEntities.Context.cs">
       <AutoGen>True</AutoGen>

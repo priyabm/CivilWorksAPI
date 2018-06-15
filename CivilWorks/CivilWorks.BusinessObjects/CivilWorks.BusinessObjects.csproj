@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CivilWorks">
+      <HintPath>..\..\bin\Debug\CivilWorks.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -44,7 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ErrorObject.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="MesssagingService\EmailMessage.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectReport.cs" />
+    <Compile Include="ProjectTeam.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserPasswordActivation.cs" />

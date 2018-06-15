@@ -23,6 +23,22 @@ namespace CivilWorks.DataRepository
             {
                 repo = new InvitationRepository(context);
             }
+            if (typeof(T) == typeof(BO.Project))
+            {
+                repo = new ProjectRepository(context);
+            }
+            if (typeof(T) == typeof(BO.Item))
+            {
+                repo = new  ItemRepository(context);
+            }
+            if (typeof(T) == typeof(BO.ProjectTeam))
+            {
+                repo = new ProjectTeamRepository(context);
+            }
+            if (typeof(T)==typeof(BO.ProjectReport))
+            {
+                repo = new  ProjectReportRepository(context);
+            }
             return repo;
         }
     }
