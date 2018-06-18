@@ -1,4 +1,4 @@
-﻿using CivilWorks.BOModel;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +25,7 @@ namespace CivilWorks.BusinessObjects
         public System.DateTime CheckedDate { get; set; }
         public int CreatedByUserID { get; set; }
         public System.DateTime DateCreated { get; set; }
-        public virtual ProjectLabourEquipment ProjectLabourEquipments { get; set; }
-        public virtual ProjectQuantity ProjectQuantities { get; set; }
+        public  ProjectLabourEquipment ProjectLabourEquipments { get; set; }
+        public virtual ICollection<ProjectQuantity> ProjectQuantities { get; set; }
     }
 }

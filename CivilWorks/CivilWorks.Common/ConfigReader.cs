@@ -96,7 +96,7 @@ namespace CivilWorks.Common
                 switch (Type.GetTypeCode(typeof(T)))
                 {
                     case TypeCode.Boolean:
-                        settingValue = Boolean.Parse(value.ToBooleanString());
+                        settingValue ="";// Boolean.Parse(value.ToBooleanString());
                         break;
                     case TypeCode.Byte:
                         settingValue = Byte.Parse(value, NumberStyles.AllowTrailingWhite | NumberStyles.AllowLeadingWhite);

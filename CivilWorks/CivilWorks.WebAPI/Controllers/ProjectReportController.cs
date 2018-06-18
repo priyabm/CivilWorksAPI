@@ -18,17 +18,14 @@ namespace CivilWorks.WebAPI.Controllers
         {
             RequestHandler = new APIRequestHandler<BO.ProjectReport>();
         }
-
-        public HttpResponseMessage Get()
-        {
-            return RequestHandler.Get(Request);
-        }
-
+        
         [HttpPost]
         [Route("Save")]
-        public HttpResponseMessage SaveProjectReport([FromBody] BO.ProjectReport report)
+        public HttpResponseMessage Post([FromBody]BO.ProjectReport report)
         {
             return RequestHandler.CreateGbObject(Request, report);
         }
+
+        
     }
 }

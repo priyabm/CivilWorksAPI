@@ -34,7 +34,7 @@
       <HintPath>..\..\bin\Debug\CivilWorks.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\CivilWorks.WebAPI\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +50,8 @@
     <Compile Include="Item.cs" />
     <Compile Include="MesssagingService\EmailMessage.cs" />
     <Compile Include="Project.cs" />
+    <Compile Include="ProjectLabourEquipment.cs" />
+    <Compile Include="ProjectQuantity.cs" />
     <Compile Include="ProjectReport.cs" />
     <Compile Include="ProjectTeam.cs" />
     <Compile Include="User.cs" />
